@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <move element="checkout.shipping.section" destination="column.main" before="checkout.shipping-details.section"/>
+
+        <referenceBlock name="checkout.shipping-details.title">
+            <arguments>
+                <argument name="magewire" xsi:type="object">YireoTraining\ExampleHyvaCheckoutInStorePickup\MageWire\ShippingDetailsTitle</argument>
+            </arguments>
+        </referenceBlock>
+
+        <container name="checkout.shipping-details.pickup" >
+            <!--
+            <block class="Magento\Framework\View\Element\Text">
+                <arguments>
+                    <argument name="text" xsi:type="string">Hello World</argument>
+                </arguments>
+            </block>
+            -->
+        </container>
+    </body>
+</page>

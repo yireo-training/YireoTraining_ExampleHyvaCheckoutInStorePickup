@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <custom_pickup>
+                <active>0</active>
+                <title>In Store Pickup</title>
+                <name>In Store Pickup</name>
+                <sallowspecific>0</sallowspecific>
+                <sort_order>15</sort_order>
+                <model>YireoTraining\ExampleHyvaCheckoutInStorePickup\Carrier\CustomPickup</model>
+            </custom_pickup>
+        </carriers>
+    </default>
+</config>

@@ -1,0 +1,15 @@
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+$childBlocks = $block->getLayout()->getChildBlocks('checkout.shipping-details.pickup');
+?>
+<?php if (!empty($childBlocks)) : ?>
+<div>
+    <?php foreach ($childBlocks as $childBlock) : ?>
+    <?= $childBlock->toHtml() ?>
+    <?php endforeach; ?>
+</div>
+<?php else: ?>
+<div>
+    <?= __('Please add a block to the container with name "checkout.shipping-details.pickup"') ?>
+</div>
+<?php endif; ?>
